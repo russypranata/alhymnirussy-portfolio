@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alhymni Russy - Portfolio</title>
+    <link rel="icon" type="image/png" href="./assets/developer.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <nav class="container">
+            <div class="logo"><a href="#hero">alhymnirussy</a></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu" aria-label="Toggle menu" aria-expanded="false">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="container">
+            <div class="hero-img">
+                <img src="./assets/profile3.png" alt="Foto Profil Placeholder">
+            </div>
+            <div class="hero-text">
+                <p class="intro-text">Hello, I'm</p>
+                <h1 class="name">Alhymni Russy</h1>
+                <p class="title">
+                    <span id="typing-effect"></span>
+                </p>
+                <div class="cta-buttons">
+                    <a href="./assets/cv-alhymnirussy.pdf" class="btn btn-outline" target="_blank" download="CV_Alhymni_Russy.pdf">Download CV</a>
+                    <a href="#contact" class="btn btn-filled">Contact Info</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="https://github.com/alhymnirussy" target="_blank" class="social-icon" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-section fade-in-section">
+            <div class="container">
+                <p class="section-subtitle text-center">Get To Know More</p>
+                <h2 class="section-title text-center">About Me</h2>
+                <div class="about-container">
+                    <div class="about-image-wrapper">
+                        <img src="./assets/profile2.png" alt="My workspace or a relevant image">
+                    </div>
+                    <div class="about-text-wrapper">
+                        <p class="about-description">
+                            Hi, I’m Russy — a passionate Mobile and Web Developer with a fresh academic background and a focus on Flutter for mobile apps and modern web technologies. I love turning ideas into clean, responsive, and user-friendly applications. Whether it's mobile or web, I enjoy collaborating and building products that make an impact. Let’s create something great together!
+                        </p>
+                        <nav class="about-tabs-nav">
+                            <ul>
+                                <li><a href="#education-tab" class="tab-link active" data-tab="education">Education</a></li>
+                                <li><a href="#certifications-tab" class="tab-link" data-tab="certifications">Certifications</a></li>
+                            </ul>
+                        </nav>
+                        <div class="about-tabs-content">
+                            <div id="education-tab" class="tab-pane active">
+                                <p>Graduated with a Bachelor's degree in Informatics from Tanjungpura University in 2025 (GPA 3.7), with hands-on experience in software engineering, web and mobile development</p>
+                            </div>
+                            <div id="certifications-tab" class="tab-pane">
+                                <p>Relevant certifications and completed courses will be showcased here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experiences" class="experiences-section fade-in-section">
+            <div class="container">
+                <p class="section-subtitle text-center">Explore My</p>
+                <h2 class="section-title text-center">Experiences</h2>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-icon"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 - Present</span>
+                            <h3>Freelance Web Developer</h3>
+                            <p class="timeline-company">Various Clients</p>
+                            <p class="timeline-description">
+                                Designed and developed landing pages for corporate clients, as well as a combined 
+                                e-learning and academic information system (SIAKAD) for a senior high school (SMA), 
+                                tailored to specific requirements with responsive and user-friendly interfaces. 
+                                The system included digital learning features along with academic and administrative management.
+                            </p>
+                            <button class="btn-toggle-details">More</button>
+                            <div class="timeline-extra-info">
+                                <ul class="timeline-details-list">
+                                    <li>Developed a company landing page to highlight brand identity and services.</li>
+                                    <li>Built an integrated e-learning and academic information system (SIAKAD) 
+                                        covering class management, attendance, grading, scheduling, and school administration.</li>
+                                </ul>                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="timeline-item">
+                        <div class="timeline-icon"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022</span>
+                            <h3>Web Development Intern</h3>
+                            <p class="timeline-company">Tech Startup Inc.</p>
+                            <p class="timeline-description">
+                                Assisted the senior development team in building front-end components using HTML, CSS, and JavaScript. Gained hands-on experience with PHP backend logic and version control using Git. Contributed to testing and debugging web applications.
+                            </p>
+                        </div>
+                    </div> -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021 - 2022</span>
+                            <h3>Personal Project</h3>
+                            <p class="timeline-company">Independent Study</p>
+                            <p class="timeline-description">
+                                Worked on independent projects including the development of a full-stack e-commerce website 
+                                and a simple RESTful API, focusing on backend development, database design, and practical 
+                                implementation of web technologies.
+                            </p>
+                            <button class="btn-toggle-details">More</button>
+                            <div class="timeline-extra-info">
+                                <ul class="timeline-details-list">
+                                    <li>Designed and built a full-stack e-commerce website concept using PHP (CodeIgniter) and Bootstrap, 
+                                        featuring product catalogs, user authentication, and a basic shopping cart.</li>
+                                    <li>Developed a RESTful web service for a simple contact management system using Node.js 
+                                        to practice API development and integration.</li>
+                                </ul>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"></div>
+                        <div class="timeline-content">
+                          <span class="timeline-date">2019 - 2025</span>
+                          <h3>Learning Foundations</h3>
+                          <p class="timeline-company">University & Self-Study</p>
+                          <p class="timeline-description">
+                            Built strong foundations in Computer Science through university coursework and self-directed learning. Gained practical experience with web and mobile technologies including HTML, CSS, JavaScript, PHP, MySQL, and frameworks like Bootstrap, CodeIgniter, and Flutter. These skills were applied in both academic assignments and personal projects, ranging from static websites to dynamic systems and mobile applications.
+                          </p>                          
+                          <button class="btn-toggle-details">More</button>
+                          <div class="timeline-extra-info">
+                            <ul class="timeline-details-list">
+                              <li>Book borrowing system with user auth and book loan management using HTML, CSS, PHP, MySQL, and JS.</li>
+                              <li>Responsive landing page built with HTML and Bootstrap featuring sections like hero, features, and contact.</li>
+                              <li>WebGIS app with interactive maps for places of worship in Pontianak using CodeIgniter 4.</li>
+                              <li>Student data manager for MBKM program using CodeIgniter 4 with CRUD and admin features.</li>
+                              <li>Flutter-based Android app for airport taxi booking with RESTful API integration (Airport Taxi Sharing).</li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>                                
+                </div>
+            </div>
+        </section>        
+        <section id="skills" class="skills-section fade-in-section">
+            <div class="container">
+                <p class="section-subtitle text-center">Explore My</p>
+                <h2 class="section-title text-center">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/html-5.png" alt="HTML Icon">
+                        </div>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/css-3.png" alt="CSS Icon">
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/java-script.png" alt="Javascript Icon">
+                        </div>
+                        <h3>Javascript</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/php.png" alt="PHP Icon">
+                        </div>
+                        <h3>PHP</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/dart.png" alt="Dart Icon">
+                        </div>
+                        <h3>Dart</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/bootstrap.png" alt="Bootstrap Icon">
+                        </div>
+                        <h3>Bootstrap</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/tailwind.png" alt="Tailwind Icon">
+                        </div>
+                        <h3>Tailwind</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/reactjs.png" alt="React.js Icon">
+                        </div>
+                        <h3>React.js</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/flutter.png" alt="Flutter Icon">
+                        </div>
+                        <h3>Flutter</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/codeigniter.png" alt="Codeigniter Icon">
+                        </div>
+                        <h3>Codeigniter</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/nodejs.png" alt="Node.js Icon">
+                        </div>
+                        <h3>Node.js</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/expressjs.png" alt="Express.js Icon">
+                        </div>
+                        <h3>Express.js</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/wordpress.png" alt="Wordpress Icon">
+                        </div>
+                        <h3>Wordpress</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/git.png" alt="Git Icon">
+                        </div>
+                        <h3>Git</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/api.png" alt="REST API Icon">
+                        </div>
+                        <h3>REST API</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/mysql.png" alt="MYSQL Icon">
+                        </div>
+                        <h3>My SQL</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/mongodb.png" alt="MongoDB Icon">
+                        </div>
+                        <h3>MongoDB</h3>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <section id="projects" class="projects-section fade-in-section">
+            <div class="container">
+                <p class="section-subtitle text-center">Browse My</p>
+                <h2 class="section-title text-center">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <!-- <span class="project-year">2025</span> -->
+                            <img src="./assets/project-ats.png" alt="RESTful API">
+                        </div>
+                        <div class="project-details">
+                            <h3>Airport Taxi Sharing (Android App)</h3>
+                            <p class="project-description">
+                                An Android-based mobile application designed to enhance the efficiency of airport taxi services by enabling drivers to input the passenger’s drop-off location from the airport and define a surrounding radius. Passengers within this radius who intend to travel to the airport can view and book the same taxi for their return trip. This approach enables taxis to avoid empty return journeys, optimizes fuel consumption, and improves driver efficiency.
+                            </p>
+                            <div class="project-tags">
+                                <span>Flutter</span>
+                                <span>Firebase Storage</span>
+                                <span>MySQL</span>
+                                <span>FCM</span>
+                                <span>React.js</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>RESTful API</span>
+                                <span>Google Maps API</span>
+                            </div>
+                            <!-- <div class="project-links">
+                                <a href="#" target="_blank" aria-label="GitHub Repository" class="github-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <section id="contact" class="contact-section fade-in-section">
+            <div class="container">
+                <p class="section-subtitle text-center">Get in Touch</p>
+                <h2 class="section-title text-center">Contact Me</h2>
+                <div class="contact-options-container">
+                    <p class="contact-options-text text-center">Connect with me directly:</p>
+                    <div class="contact-social-icons">
+                        <a href="YOUR_LINKEDIN_URL" target="_blank" class="social-icon contact-option-icon" aria-label="LinkedIn">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/alhymnirussy/" target="_blank" class="social-icon contact-option-icon" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                         <a href="https://wa.me/62895338170582" target="_blank" class="social-icon contact-option-icon" aria-label="WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                 <hr class="contact-divider">
+
+                 <p class="text-center contact-form-intro">Or send me a message directly via email:</p>
+                <form id="contact-form" action="https://formspree.io/f/xkgrjwpq" method="POST" >
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject (Optional)">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="form-submit">
+                         <button type="submit" class="btn btn-filled">Send Message</button>
+                         <button type="reset" class="btn btn-outline">Reset</button>
+                    </div>
+                    <div id="form-status" class="form-status-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <nav class="footer-nav">
+                 <a href="#about">About</a>
+                 <a href="#experiences">Experiences</a>
+                 <a href="#skills">Skills</a>
+                 <a href="#projects">Projects</a>
+                 <a href="#contact">Contact</a>
+             </nav>
+            <p>Copyright © 2025 Alhymni Russy. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
