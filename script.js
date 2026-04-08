@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    // Init Lucide icons
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+
     // ── Mobile Menu ──────────────────────────────────────────────
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.getElementById('nav-links');
@@ -151,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // ── Scroll Spy (active nav link) ──────────────────────────────
-    const sections = document.querySelectorAll('main section[id]');
+    const sections = document.querySelectorAll('main section[id], main .work-section[id]');
     const navItems = document.querySelectorAll('.nav-links a');
 
     function updateActiveNav() {

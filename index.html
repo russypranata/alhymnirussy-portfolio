@@ -1,14 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alhymni Russy - Portfolio</title>
+    <title>Alhymni Russy Pranata - Portfolio</title>
     <link rel="icon" type="image/png" href="./assets/developer.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Relief&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
     <header id="main-header">
@@ -16,9 +17,8 @@
             <div class="logo"><a href="#hero">alhymnirussy</a></div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#work">Experience & Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="menu-toggle" id="mobile-menu" aria-label="Toggle menu" aria-expanded="false">
@@ -31,8 +31,23 @@
 
     <main>
         <section id="hero" class="container">
+            <!-- Background floating lucide icons -->
+            <div class="hero-bg-icons" aria-hidden="true">
+                <i data-lucide="monitor"          class="bg-icon" style="top:7%;  left:4%;   animation-delay:0s;   animation-duration:8s"></i>
+                <i data-lucide="smartphone"       class="bg-icon" style="top:3%;  left:42%;  animation-delay:1.2s; animation-duration:9s"></i>
+                <i data-lucide="code-2"           class="bg-icon" style="top:11%; right:6%;  animation-delay:2.5s; animation-duration:7s"></i>
+                <i data-lucide="globe"            class="bg-icon" style="top:38%; left:7%;   animation-delay:0.8s; animation-duration:10s"></i>
+                <i data-lucide="database"         class="bg-icon" style="top:25%; left:28%;  animation-delay:3s;   animation-duration:7.5s"></i>
+                <i data-lucide="layout-dashboard" class="bg-icon" style="top:44%; right:9%;  animation-delay:1.5s; animation-duration:9s"></i>
+                <i data-lucide="terminal"         class="bg-icon" style="top:62%; left:2%;   animation-delay:0.4s; animation-duration:8.5s"></i>
+                <i data-lucide="git-branch"       class="bg-icon" style="top:55%; left:55%;  animation-delay:2s;   animation-duration:7s"></i>
+                <i data-lucide="cpu"              class="bg-icon" style="top:20%; right:28%;  animation-delay:3.5s; animation-duration:10s"></i>
+                <i data-lucide="layers"           class="bg-icon" style="top:75%; left:22%;  animation-delay:1.8s; animation-duration:8s"></i>
+                <i data-lucide="wifi"             class="bg-icon" style="top:82%; right:15%; animation-delay:4s;   animation-duration:9.5s"></i>
+                <i data-lucide="braces"           class="bg-icon" style="top:68%; right:38%; animation-delay:2.2s; animation-duration:8s"></i>
+            </div>
             <div class="hero-img">
-                <img src="./assets/profile3.png" alt="Foto Profil Placeholder">
+                <img src="./assets/profile3.png" alt="Alhymni Russy Pranata">
             </div>
             <div class="hero-text">
                 <p class="intro-text">Hello, I'm</p>
@@ -48,7 +63,7 @@
                     <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     </a>
-                    <a href="https://github.com/alhymnirussy" target="_blank" class="social-icon" aria-label="GitHub">
+                    <a href="https://github.com/russypranata" target="_blank" class="social-icon" aria-label="GitHub">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                     </a>
                 </div>
@@ -77,94 +92,180 @@
                                 <p>Graduated with a Bachelor's degree in Informatics from Tanjungpura University in 2025 (GPA 3.7), with hands-on experience in software engineering, web and mobile development</p>
                             </div>
                             <div id="certifications-tab" class="tab-pane">
-                                <p>Relevant certifications and completed courses will be showcased here.</p>
+                                <p>Coming soon.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="experiences" class="experiences-section fade-in-section">
+        <section id="work" class="work-section fade-in-section">
             <div class="container">
-                <p class="section-subtitle text-center">Explore My</p>
-                <h2 class="section-title text-center">Experiences</h2>
-                <div class="timeline-container">
-                    <div class="timeline-item">
-                        <div class="timeline-icon"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">2023 - Present</span>
-                            <h3>Freelance Web Developer</h3>
-                            <p class="timeline-company">Various Clients</p>
-                            <p class="timeline-description">
-                                Designed and developed landing pages for corporate clients, as well as a combined 
-                                e-learning and academic information system (SIAKAD) for a senior high school (SMA), 
-                                tailored to specific requirements with responsive and user-friendly interfaces. 
-                                The system included digital learning features along with academic and administrative management.
-                            </p>
-                            <button class="btn-toggle-details">More</button>
-                            <div class="timeline-extra-info">
-                                <ul class="timeline-details-list">
-                                    <li>Developed a company landing page to highlight brand identity and services.</li>
-                                    <li>Built an integrated e-learning and academic information system (SIAKAD) 
-                                        covering class management, attendance, grading, scheduling, and school administration.</li>
-                                </ul>                                
+                <p class="section-subtitle text-center">What I've Built</p>
+                <h2 class="section-title text-center">Experience & Projects</h2>
+
+                <!-- Freelance / Work Experience -->
+                <div class="work-subsection">
+                    <h3 class="work-subsection-title">Freelance & Work</h3>
+                    <div class="timeline-container">
+
+                        <div class="timeline-item">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2025</span>
+                                <h3>Field Surveyor</h3>
+                                <p class="timeline-company">BPJS Ketenagakerjaan — Program Survei UMKM</p>
+                                <p class="timeline-description">Conducted surveys of 1,000+ SMEs using a web-based application with high data accuracy. Distributed official letters to all surveyed business entities on time.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2025</span>
+                                <h3>Freelance Web Developer</h3>
+                                <p class="timeline-company">PT Tanikoe</p>
+                                <p class="timeline-description">Developed a company profile website with full deployment, domain configuration, and performance optimization.</p>
+                                <button class="btn-toggle-details">More</button>
+                                <div class="timeline-extra-info">
+                                    <ul class="timeline-details-list">
+                                        <li>Built with Next.js, Supabase, and Tailwind CSS.</li>
+                                        <li>Managed hosting, domain, and DNS configuration.</li>
+                                        <li>Optimized SEO (Metadata, Sitemap) and Web Accessibility (A11y).</li>
+                                        <li>Performed Lighthouse audit to achieve optimal performance scores.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2025 – 2026</span>
+                                <h3>Freelance Web Developer</h3>
+                                <p class="timeline-company">SMAIT Al-Fityan</p>
+                                <p class="timeline-description">Built two separate systems for the school: a Moodle-based e-learning platform and a full school administration system.</p>
+                                <button class="btn-toggle-details">More</button>
+                                <div class="timeline-extra-info">
+                                    <ul class="timeline-details-list">
+                                        <li>Implemented Moodle LMS — installation, configuration, user accounts, and digital course structure.</li>
+                                        <li>Built a headless school admin system using Laravel (API) + Next.js (frontend) with multi-role auth (Admin, TU, Principal, Student, Parent, Teacher).</li>
+                                        <li>Developed academic modules: student/teacher records, E-Rapor, and dynamic document printing.</li>
+                                        <li>Used PostgreSQL to handle complex data relations and integrity.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="work-subsection">
+                    <h3 class="work-subsection-title">Projects</h3>
+
+                    <!-- University -->
+                    <p class="project-group-label">University</p>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-details">
+                                <h3>Airport Taxi Sharing</h3>
+                                <p class="project-tag-type">Android App · Tugas Akhir</p>
+                                <p class="project-description">Android app enabling airport taxi drivers to share return trips with passengers nearby, reducing empty runs and fuel waste.</p>
+                                <div class="project-tags">
+                                    <span>Flutter</span><span>Node.js</span><span>Express.js</span>
+                                    <span>MySQL</span><span>React.js</span><span>Google Maps API</span>
+                                    <span>FCM</span><span>Firebase Storage</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-details">
+                                <h3>MBKM Data Management</h3>
+                                <p class="project-tag-type">Web App</p>
+                                <p class="project-description">Web-based system for managing MBKM student data with progress tracking, CRUD operations, and admin access control.</p>
+                                <div class="project-tags">
+                                    <span>CodeIgniter</span><span>PHP</span><span>Bootstrap</span><span>MySQL</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="timeline-item">
-                        <div class="timeline-icon"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">2022</span>
-                            <h3>Web Development Intern</h3>
-                            <p class="timeline-company">Tech Startup Inc.</p>
-                            <p class="timeline-description">
-                                Assisted the senior development team in building front-end components using HTML, CSS, and JavaScript. Gained hands-on experience with PHP backend logic and version control using Git. Contributed to testing and debugging web applications.
-                            </p>
+
+                    <!-- Personal -->
+                    <p class="project-group-label">Personal</p>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-details">
+                                <h3>QwenBridge</h3>
+                                <p class="project-tag-type">API Gateway Platform</p>
+                                <p class="project-description">Subscription-based API gateway bridging to Qwen AI models, with multi-account rotation, monitoring dashboard, and AES-256-GCM token encryption.</p>
+                                <div class="project-tags">
+                                    <span>Next.js</span><span>Hono</span><span>PostgreSQL</span><span>Tailwind CSS</span>
+                                </div>
+                            </div>
                         </div>
-                    </div> -->
-                    <div class="timeline-item">
-                        <div class="timeline-icon"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">2021 - 2022</span>
-                            <h3>Personal Project</h3>
-                            <p class="timeline-company">Independent Study</p>
-                            <p class="timeline-description">
-                                Worked on independent projects including the development of a full-stack e-commerce website 
-                                and a simple RESTful API, focusing on backend development, database design, and practical 
-                                implementation of web technologies.
-                            </p>
-                            <button class="btn-toggle-details">More</button>
-                            <div class="timeline-extra-info">
-                                <ul class="timeline-details-list">
-                                    <li>Designed and built a full-stack e-commerce website concept using PHP (CodeIgniter) and Bootstrap, 
-                                        featuring product catalogs, user authentication, and a basic shopping cart.</li>
-                                    <li>Developed a RESTful web service for a simple contact management system using Node.js 
-                                        to practice API development and integration.</li>
-                                </ul>                                
+
+                        <div class="project-card">
+                            <div class="project-details">
+                                <h3>SaaS Digital Menu</h3>
+                                <p class="project-tag-type">Web App</p>
+                                <p class="project-description">Multi-tenant digital menu SaaS for SMEs with slug-based tenancy, menu & store management, custom themes, and QR code generator.</p>
+                                <div class="project-tags">
+                                    <span>Next.js</span><span>Supabase</span><span>Tailwind CSS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-details">
+                                <h3>Film Catalog & Streaming</h3>
+                                <p class="project-tag-type">Web App</p>
+                                <p class="project-description">Movie catalog and streaming website with detailed film pages, YouTube trailer playback, streaming embed, and SEO optimization.</p>
+                                <div class="project-tags">
+                                    <span>Astro</span><span>React</span><span>Tailwind CSS</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon"></div>
-                        <div class="timeline-content">
-                          <span class="timeline-date">2019 - 2025</span>
-                          <h3>Learning Foundations</h3>
-                          <p class="timeline-company">University & Self-Study</p>
-                          <p class="timeline-description">
-                            Built strong foundations in Computer Science through university coursework and self-directed learning. Gained practical experience with web and mobile technologies including HTML, CSS, JavaScript, PHP, MySQL, and frameworks like Bootstrap, CodeIgniter, and Flutter. These skills were applied in both academic assignments and personal projects, ranging from static websites to dynamic systems and mobile applications.
-                          </p>                          
-                          <button class="btn-toggle-details">More</button>
-                          <div class="timeline-extra-info">
-                            <ul class="timeline-details-list">
-                              <li>Book borrowing system with user auth and book loan management using HTML, CSS, PHP, MySQL, and JS.</li>
-                              <li>Responsive landing page built with HTML and Bootstrap featuring sections like hero, features, and contact.</li>
-                              <li>WebGIS app with interactive maps for places of worship in Pontianak using CodeIgniter 4.</li>
-                              <li>Student data manager for MBKM program using CodeIgniter 4 with CRUD and admin features.</li>
-                              <li>Flutter-based Android app for airport taxi booking with RESTful API integration (Airport Taxi Sharing).</li>
-                            </ul>
-                          </div>
+
+                    <!-- Freelance -->
+                    <p class="project-group-label">Freelance</p>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-details">
+                                <h3>Company Profile — PT Tanikoe</h3>
+                                <p class="project-tag-type">Website</p>
+                                <p class="project-description">Company profile website with SEO optimization, Web Accessibility (A11y), Lighthouse audit, and full deployment including domain and DNS configuration.</p>
+                                <div class="project-tags">
+                                    <span>Next.js</span><span>Supabase</span><span>Tailwind CSS</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>                                
+
+                        <div class="project-card">
+                            <div class="project-details">
+                                <h3>School Administration System — SMAIT Al-Fityan</h3>
+                                <p class="project-tag-type">Web App</p>
+                                <p class="project-description">Headless school admin system with multi-role auth (Admin, TU, Principal, Student, Parent, Teacher), academic modules, E-Rapor, and dynamic document printing.</p>
+                                <div class="project-tags">
+                                    <span>Laravel</span><span>Next.js</span><span>PostgreSQL</span><span>Tailwind CSS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-details">
+                                <h3>E-Learning LMS — SMAIT Al-Fityan</h3>
+                                <p class="project-tag-type">LMS</p>
+                                <p class="project-description">Moodle-based Learning Management System with full installation, configuration, user account management, and digital course structure setup.</p>
+                                <div class="project-tags">
+                                    <span>Moodle</span><span>PHP</span><span>MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>        
@@ -247,6 +348,12 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-icon">
+                            <img src="./assets/laravel.webp" alt="Laravel Icon">
+                        </div>
+                        <h3>Laravel</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
                             <img src="./assets/wordpress.png" alt="Wordpress Icon">
                         </div>
                         <h3>Wordpress</h3>
@@ -275,47 +382,21 @@
                         </div>
                         <h3>MongoDB</h3>
                     </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/postgresql.png" alt="PostgreSQL Icon">
+                        </div>
+                        <h3>PostgreSQL</h3>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="./assets/supabase.webp" alt="Supabase Icon">
+                        </div>
+                        <h3>Supabase</h3>
+                    </div>
                 </div>                
             </div>
         </section>
-        <section id="projects" class="projects-section fade-in-section">
-            <div class="container">
-                <p class="section-subtitle text-center">Browse My</p>
-                <h2 class="section-title text-center">Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <!-- <span class="project-year">2025</span> -->
-                            <img src="./assets/project-ats.png" alt="RESTful API">
-                        </div>
-                        <div class="project-details">
-                            <h3>Airport Taxi Sharing (Android App)</h3>
-                            <p class="project-description">
-                                An Android-based mobile application designed to enhance the efficiency of airport taxi services by enabling drivers to input the passenger’s drop-off location from the airport and define a surrounding radius. Passengers within this radius who intend to travel to the airport can view and book the same taxi for their return trip. This approach enables taxis to avoid empty return journeys, optimizes fuel consumption, and improves driver efficiency.
-                            </p>
-                            <div class="project-tags">
-                                <span>Flutter</span>
-                                <span>Firebase Storage</span>
-                                <span>MySQL</span>
-                                <span>FCM</span>
-                                <span>React.js</span>
-                                <span>Node.js</span>
-                                <span>Express.js</span>
-                                <span>RESTful API</span>
-                                <span>Google Maps API</span>
-                            </div>
-                            <!-- <div class="project-links">
-                                <a href="#" target="_blank" aria-label="GitHub Repository" class="github-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                </a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>        
         <section id="contact" class="contact-section fade-in-section">
             <div class="container">
                 <p class="section-subtitle text-center">Get in Touch</p>
@@ -368,9 +449,8 @@
         <div class="container">
             <nav class="footer-nav">
                  <a href="#about">About</a>
-                 <a href="#experiences">Experiences</a>
+                 <a href="#work">Experience & Projects</a>
                  <a href="#skills">Skills</a>
-                 <a href="#projects">Projects</a>
                  <a href="#contact">Contact</a>
              </nav>
             <p>Copyright © 2025 Alhymni Russy. All Rights Reserved.</p>
